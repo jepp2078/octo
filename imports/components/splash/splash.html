@@ -1,8 +1,8 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom" style="z-index:9999999">
     <div class="container">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <span class="sr-only">Navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
             <div>
 
@@ -16,10 +16,10 @@
                     <a href="#header-collapse"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#signup-collapse">Sign up</a>
+                    <a href="#signup-collapse">Tilmelding</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about-collapse">about</a>
+                    <a href="#about-collapse">Omkring os</a>
                 </li>
             </ul>
         </div>
@@ -30,11 +30,11 @@
     <div class="container" tabindex="-1">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="images/OctoSmall.png" style="max-width: 14%;position: relative;top: -40px;" alt="">
+                <img class="img-responsive main-logo" src="images/OctoSmall.png" alt="">
                 <div class="intro-text">
                     <h1 class="name" style="font-size:112px">OCTO</h1>
                     <hr class="star-light">
-                    <span class="skills" style="font-size:28px">Accounts - Loans - Advice</span>
+                    <span class="skills" style="font-size:28px">Loans - Accounts - Advice</span>
                 </div>
                 <br>
                 <a class="btn btn-block btn-success btn-transparent" style="font-size: 50px" data-toggle="collapse" data-target="#header-collapse, #signup-collapse"><span class="glyphicon glyphicon-arrow-down"></span></a>
@@ -43,12 +43,12 @@
     </div>
 </header>
 
-<section class="row collapse" id="signup-collapse">
+<section class="row collapse section" id="signup-collapse">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <a class="btn btn-block btn-default btn-transparent" style="font-size: 20px" data-toggle="collapse" data-target="#header-collapse, #signup-collapse"><span class="glyphicon glyphicon-arrow-up"></span></a>
-                <h2>sign up</h2>
+                <h2>Tilmelding</h2>
                 <hr class="star-primary">
             </div>
         </div>
@@ -56,29 +56,29 @@
             <form name="signUp" id="signUpForm" novalidate>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                        <label for="name">Navn</label>
+                        <input type="text" class="form-control" placeholder="Navn" id="name" required data-validation-required-message="Skriv venligst dit navn.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label for="email">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                        <label for="email">Email Adresse</label>
+                        <input type="email" class="form-control" placeholder="Email Adresse" id="email" required data-validation-required-message="Skriv venligst din email adresse.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                        <label for="phone">Telefon nummer</label>
+                        <input type="tel" class="form-control" placeholder="Telefon nummer" id="phone" required data-validation-required-message="Skriv venligst dit telefon nummer.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="phone">Password</label>
-                        <input type="password" class="form-control" placeholder="Password" id="phone" required data-validation-required-message="Please enter your password">
+                        <input type="password" class="form-control" placeholder="Password" id="phone" required data-validation-required-message="Skriv venligst dit password">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                 <div id="success"></div>
                 <div class="row">
                     <div class="form-group col-xs-12">
-                        <button type="submit" class="btn btn-success btn-lg">Sign Up</button>
+                        <button type="submit" class="btn btn-success btn-lg">Tilmeld</button>
                     </div>
                 </div>
             </form>
@@ -95,25 +95,29 @@
     </div>
 </section>
 
-<section class="success row collapse" id="about-collapse">
+<section class="success row collapse section" id="about-collapse">
     <div class="row">
         <div class="container">
             <a class="btn btn-block btn-success btn-transparent" style="font-size: 20px" data-toggle="collapse" data-target="#signup-collapse, #about-collapse"><span class="glyphicon glyphicon-arrow-up"></span></a>
             <div class="row collapse in" id="about-collapse1">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>About</h2>
+                        <h2>Omkring os</h2>
                         <hr class="star-light">
                         <br>
                     </div>
                 </div>
                 <div>
                     <div class="col-sm-8">
-                        <h3 style="margin-top:0px"><u>Our Story</u></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p> Donec ultricies lectus quam, eu volutpat lorem ullamcorper at. Nunc hendrerit, nisi at dignissim convallis, mauris urna suscipit massa, a imperdiet elit eros nec eros. Vestibulum interdum euismod urna sit amet hendrerit.</p>
-                        <p> Fusce quis nisi eget elit tincidunt rhoncus efficitur sit amet ante. Nam in est in urna mattis condimentum. Quisque semper lectus vel nisi varius eleifend. Suspendisse velit arcu, eleifend ut velit id, accumsan tincidunt lorem. Ut est nisl, finibus ullamcorper mauris quis, fringilla faucibus sapien. Phasellus blandit imperdiet facilisis.</p>
-                        <p>Pellentesque sit amet sapien vel tortor ultricies vulputate. Nunc arcu elit, pellentesque vel nulla sed, venenatis aliquam quam.</p>
+                        <h3 style="margin-top:0px"><u>Vores Historie</u></h3>
+                            <p class="about-text">Octo er en serviceorganisation uafhængig af banker, der støtter dig som almindelig borgere med at vælge den bank der kan tilbyde de bedste vilkår til din specifikke privatøkonomiske situation - helt uden omkostninger. </p>
+
+                            <p class="about-text">Vi er et team bestående af 2 ildsjæle med indsigt i den digitale verden og en passion for at gøre privatøkonomi enklere for alle. </p>
+
+                            <p class="about-text">Jeppe Johansen:</p>
+                            <p class="about-text">Mikkel Højland:</p>
+
+                            <p class="about-text">Sammen er vi på en mission om at gøre privatøkonomi letter for alle. Synes du også det lyder interessant og har forslag til muligheder, forbedringer eller samarbejde? Fang os på mail@octo.finance og lad os tage en snak. </p>
                     </div>
                     <div class="col-sm-4 about-item">
                         <a href="#aboutModal1" class="about-link" data-toggle="modal">
@@ -138,12 +142,13 @@
                         <img src="images/mobile.png" class="img-responsive img-max">
                     </a>
                 </div>
-                <div class="col-sm-8">
-                  <h3 style="margin-top:0px"><u>Our Vision</u></h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <p> Donec ultricies lectus quam, eu volutpat lorem ullamcorper at. Nunc hendrerit, nisi at dignissim convallis, mauris urna suscipit massa, a imperdiet elit eros nec eros. Vestibulum interdum euismod urna sit amet hendrerit.</p>
-                  <p> Fusce quis nisi eget elit tincidunt rhoncus efficitur sit amet ante. Nam in est in urna mattis condimentum. Quisque semper lectus vel nisi varius eleifend. Suspendisse velit arcu, eleifend ut velit id, accumsan tincidunt lorem. Ut est nisl, finibus ullamcorper mauris quis, fringilla faucibus sapien. Phasellus blandit imperdiet facilisis.</p>
-                  <p>Pellentesque sit amet sapien vel tortor ultricies vulputate. Nunc arcu elit, pellentesque vel nulla sed, venenatis aliquam quam.</p>
+                <div class="col-sm-8" style="font-size:13px">
+                  <h3 style="margin-top:0px"><u>Vores Vision</u></h3>
+                    <p class="about-text">Når man handler med banken i dagens Danmark kan det virke som en jungle af juridisk sort snak og gebyrer man ikke forstår. Det er de færreste der har komplet overblik over hvad man reelt betaler sin bank og hvorfor man gør det. I sidste ende er dette uigennemskuelige og besværlige system til bankens gavn, da det man som forbruger ender med at betale en masse gebyrer man ikke har styr på og ikke orker at skifte til en anden bank fordi det simpelthen kræver for meget at     sætte sig ind i systemet.</p>
+
+                    <p class="about-text">I den idéelle verden havde vi alle vores egen personlige bankrådgiver, der hjalp med at sikre at vi som forbruger altid fik det bedste tilbud, og ikke betalte for andet end hvad der er fair og nødvendigt. Denne bankrådgiver ville give dig råd uafhængig af bankens interesse og sikre at bankskifte foregik gnidningsfrit. På en måde kan man sige at denne bankrådgiver ville være blæksprutten der holdt styr på alle bankerne og din finiansielle situation - og heraf opstod    idéen til Octo.</p>
+
+                    <p class="about-text">Målet med Octo er at fjerne bekymringen om bankforhold fra den almindelige bruger, så man ikke behøver at bruge tid og energi på at sætte sig ind i juridiske forhold og forhandle med banker. Vores ypperste mission er at yde den bedste bank-uafhængige rådgivning til vores brugere, og varetage deres finansielle situation så besværfrit som overhovedet muligt.</p>
                 </div>
             </div>
         </div>
@@ -155,7 +160,7 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col col-md-4">
-                    <h3>Location</h3>
+                    <h3>Lokation</h3>
                     <p>Trommesalen 5
                         <br>1614 København V</p>
                 </div>
@@ -177,7 +182,7 @@
                     </ul>
                 </div>
                 <div class="footer-col col-md-4">
-                    <h3>Contact</h3>
+                    <h3>Kontakt</h3>
                     <p>mail@octo.finance
                         <br>+45 1234 5678</p>
                 </div>
