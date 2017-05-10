@@ -5,8 +5,7 @@
                 <span class="sr-only">Navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
             <div>
-
-                <a class="navbar-brand" href="#page-top" style="padding: 7px 15px;"><span><img src="images/OctoSmall.png" style="max-width: 5%;top: -3px;left: -2px;position: relative;" alt="">OCTO</span></a>
+                <a class="navbar-brand" href="" style="padding: 6px 15px;"><span ng-click="navHeader()"><img src="images/OctoSmall.png" style="max-width: 5%;top: -3px;left: -2px;position: relative;" alt="">OCTO</span></a>
             </div>
         </div>
 
@@ -16,10 +15,10 @@
                     <a href="#header-collapse"></a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#signup-collapse">Tilmelding</a>
+                    <a href="" ng-click="navSignup()">Tilmelding</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="#about-collapse">Omkring os</a>
+                    <a href="" ng-click="navAbout()">Omkring os</a>
                 </li>
             </ul>
         </div>
@@ -53,32 +52,32 @@
             </div>
         </div>
         <div class="col-lg-8 col-lg-offset-2">
-            <form name="signUp" id="signUpForm" novalidate>
+            <form name="signUp" id="signUpForm" ng-submit="submit()" novalidate>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="name">Navn</label>
-                        <input type="text" class="form-control" placeholder="Navn" id="name" required data-validation-required-message="Skriv venligst dit navn.">
+                        <input type="text" class="form-control" ng-model="name" placeholder="Navn" id="name" required data-validation-required-message="Skriv venligst dit navn.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="email">Email Adresse</label>
-                        <input type="email" class="form-control" placeholder="Email Adresse" id="email" required data-validation-required-message="Skriv venligst din email adresse.">
+                        <input type="email" class="form-control" ng-model="email" placeholder="Email Adresse" id="email" required data-validation-required-message="Skriv venligst din email adresse.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="phone">Telefon nummer</label>
-                        <input type="tel" class="form-control" placeholder="Telefon nummer" id="phone" required data-validation-required-message="Skriv venligst dit telefon nummer.">
+                        <input type="tel" class="form-control" ng-model="phone" placeholder="Telefon nummer" id="phone" required data-validation-required-message="Skriv venligst dit telefon nummer.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label for="phone">Password</label>
-                        <input type="password" class="form-control" placeholder="Password" id="phone" required data-validation-required-message="Skriv venligst dit password">
+                        <input type="password" class="form-control" ng-model="password" placeholder="Password" id="password" required data-validation-required-message="Skriv venligst dit password">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -254,7 +253,8 @@
         </div>
     </div>
 </div>
-<div class="about-modal modal fade" style="padding-right:0px" id="aboutModal3" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="about-modal modal fade" style="padding-right:0px" id="successModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -266,14 +266,33 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2>Modal 3</h2>
+                        <h2>Success!</h2>
                         <hr class="star-primary">
                         <img src="images/OctoSmall.png" style="max-width:40%" class="img-responsive img-centered">
-                        <p>Text describing brian</p>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <p>Din Octo bruger er nu oprettet!</p>
+                        <button type="button" class="btn btn-success" data-dismiss="modal"><i class="fa fa-times"></i>Fortsæt</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="Error" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="errorTitle">Fejl!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Noget gik galt!
+      </div>
+      <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-danger">Luk</button>
+      </div>
+    </div>
+  </div>
 </div>

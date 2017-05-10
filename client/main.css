@@ -17,6 +17,11 @@ a:active,
 a.active {
   color: #18BC9C;
 }
+
+nav span:hover {
+  color: #18BC9C;
+}
+
 h1,
 h2,
 h3,
@@ -660,4 +665,9 @@ div#maincontent {
   .img-max{
     max-width: 58%;
   }
+}
+
+#errorModal {
+top:25%;
+outline: none;
 }
